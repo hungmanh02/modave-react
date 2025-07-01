@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 const Customer= ()=>{
     return (
-        <section className="flat-spacing">
+        <section className="flat-spacing-2 pb_0">
             <div className="container">
                 <div className="heading-section text-center">
                     <h3 className="heading wow fadeInUp">Customer Say!</h3>
@@ -17,7 +17,7 @@ const Customer= ()=>{
                     
                     slidesPerView={2}
                     loop={true}
-                    spaceBetween={1}
+                    spaceBetween={20}
                     
                     pagination={{
                         el: '.sw-pagination-testimonial',

@@ -156,6 +156,8 @@ video {
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
+  text-decoration: none;
+
 }
 
 article,
@@ -3146,6 +3148,7 @@ footer.has-pb {
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
   text-transform: capitalize;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3785,8 +3788,11 @@ footer.has-pb {
   display: flex;
   align-items: center;
   gap: 4px;
+  line-height: 22px;
+  text-decoration: none;
+  color: initial;
   font-size: 12px;
-  line-height: 20px;
+  font-weight: 700;
 }
 .tf-btn-default i {
   font-size: 20px;

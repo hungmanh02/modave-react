@@ -2,7 +2,7 @@ import React from 'react';
 
 const Seller=()=>{
     return (
-        <section className="flat-spacing-3">
+        <section className="flat-spacing-2 pb_0">
             <div className="container">
                 <div className="flat-animate-tab">
                     <ul className="tab-product justify-content-sm-center" role="tablist">
