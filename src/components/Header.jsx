@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../assets/images/logo/logo.svg'
+import { Link } from "react-router-dom";
 const Header=()=>{
     return (
         <header id="header" className="header-default">
@@ -11,15 +12,18 @@ const Header=()=>{
                         </a>
                     </div>
                     <div className="col-xl-3 col-md-4 col-6">
-                        <a href="index.html" className="logo-header">
+                        <Link to="/" className="logo-header">
                             <img src={logo} alt="logo" className="logo"/>
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-xl-6 d-none d-xl-block">
                         <nav className="box-navigation text-center">
                             <ul className="box-nav-ul d-flex align-items-center justify-content-center">
                                 <li className="menu-item active">
-                                    <a href="#" className="item-link">Home</a>  
+                                    <Link to="/" className="item-link">Home</Link>  
+                                </li>
+                                <li className="menu-item active">
+                                    <Link to="/products" className="item-link">Product Page</Link>  
                                 </li>
                                 <li className="menu-item">
                                     <a href="#" className="item-link">Shop<i className="icon icon-arrow-down"></i></a>
@@ -30,6 +34,7 @@ const Header=()=>{
                                                     <div className="mega-menu-item">
                                                         <div className="menu-heading">Shop Layout</div>
                                                         <ul className="menu-list">
+                                                            <li><Link to="/products" className="menu-link-text">Product Page...</Link></li>
                                                             <li><a href="shop-default-grid.html" className="menu-link-text">Default Grid</a></li>
                                                             <li><a href="shop-default-list.html" className="menu-link-text">Default List</a></li>
                                                             <li><a href="shop-fullwidth-list.html" className="menu-link-text">Full Width List</a></li>
