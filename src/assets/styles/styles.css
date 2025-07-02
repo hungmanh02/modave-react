@@ -64,6 +64,7 @@
 }
 
 /*---------- Reset css styles ----------- */
+
 html,
 body,
 div,
@@ -498,6 +499,7 @@ h6 {
 .text-caption-1 {
   font-size: 14px;
   line-height: 22px;
+  margin-bottom: 0;
 }
 
 .text-caption-2 {

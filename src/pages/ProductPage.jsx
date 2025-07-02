@@ -1,159 +1,24 @@
 import React from "react";
+import TitlePage from "../components/TitlePage";
+import Control from "../components/Control";
 
 const ProductPage=()=>{
     return (
         <>
-        {/* // <!-- page-title --> */}
-        <div className="page-title" style="background-image: url(images/section/page-title.jpg);">
-            <div className="container-full">
-                <div className="row">
-                    <div className="col-12">
-                        <h3 className="heading text-center">Women</h3>
-                        <ul className="breadcrumbs d-flex align-items-center justify-content-center">
-                            <li>
-                                <a className="link" href="index.html">Homepage</a>
-                            </li>
-                            <li>
-                                <i className="icon-arrRight"></i>
-                            </li>
-                            <li>
-                                Women
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /page-title -->
-        <!-- Section product -->
+        <TitlePage/>
         <section className="flat-spacing">
             <div className="container">
-                <div className="tf-shop-control">
-                    <div className="tf-control-filter">
-                        <a href="#filterShop" data-bs-toggle="offcanvas" aria-controls="filterShop" className="tf-btn-filter"><span className="icon icon-filter"></span><span className="text">Filters</span></a>
-                        <div className="d-none d-lg-flex shop-sale-text">
-                            <i className="icon icon-checkCircle"></i>
-                            <p className="text-caption-1">Shop sale items only</p>
-                        </div>
-                    </div>
-                    <ul className="tf-control-layout">
-                        <li className="tf-view-layout-switch sw-layout-list list-layout" data-value-layout="list">
-                            <div className="item">
-                                <svg className="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="3" cy="6" r="2.5" stroke="#181818"/>
-                                    <rect x="7.5" y="3.5" width="12" height="5" rx="2.5" stroke="#181818"/>
-                                    <circle cx="3" cy="14" r="2.5" stroke="#181818"/>
-                                    <rect x="7.5" y="11.5" width="12" height="5" rx="2.5" stroke="#181818"/>
-                                </svg>     
-                            </div>
-                        </li>
-                        <li className="tf-view-layout-switch sw-layout-2" data-value-layout="tf-col-2">
-                            <div className="item">
-                                <svg className="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="14" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="6" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="14" cy="14" r="2.5" stroke="#181818"/>
-                                </svg>   
-                            </div>
-                        </li>
-                        <li className="tf-view-layout-switch sw-layout-3" data-value-layout="tf-col-3">
-                            <div className="item">
-                                <svg className="icon" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="3" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="3" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="14" r="2.5" stroke="#181818"/>
-                                </svg>                                    
-                            </div>
-                        </li>
-                        <li className="tf-view-layout-switch sw-layout-4 active" data-value-layout="tf-col-4">
-                            <div className="item">
-                                <svg className="icon" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="3" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="3" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="14" r="2.5" stroke="#181818"/>
-                                </svg>
-                            </div>
-                        </li>
-                        <li className="tf-view-layout-switch sw-layout-5" data-value-layout="tf-col-5">
-                            <div className="item">
-                                <svg className="icon" width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="3" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="35" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="3" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="35" cy="14" r="2.5" stroke="#181818"/>
-                                </svg>                                    
-                            </div>
-                        </li>
-                        <li className="tf-view-layout-switch sw-layout-6" data-value-layout="tf-col-6">
-                            <div className="item">
-                                <svg className="icon" width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="3" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="35" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="43" cy="6" r="2.5" stroke="#181818"/>
-                                    <circle cx="3" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="11" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="19" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="27" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="35" cy="14" r="2.5" stroke="#181818"/>
-                                    <circle cx="43" cy="14" r="2.5" stroke="#181818"/>
-                                </svg>   
-                            </div>
-                        </li>
-                    </ul>
-                    <div className="tf-control-sorting">
-                        <p className="d-none d-lg-block text-caption-1">Sort by:</p>
-                        <div className="tf-dropdown-sort" data-bs-toggle="dropdown">
-                            <div className="btn-select">
-                                <span className="text-sort-value">Best selling</span>
-                                <span className="icon icon-arrow-down"></span>
-                            </div>
-                            <div className="dropdown-menu">
-                                <div className="select-item" data-sort-value="best-selling">
-                                    <span className="text-value-item">Best selling</span>
-                                </div>
-                                <div className="select-item" data-sort-value="a-z">
-                                    <span className="text-value-item">Alphabetically, A-Z</span>
-                                </div>
-                                <div className="select-item" data-sort-value="z-a">
-                                    <span className="text-value-item">Alphabetically, Z-A</span>
-                                </div>
-                                <div className="select-item" data-sort-value="price-low-high">
-                                    <span className="text-value-item">Price, low to high</span>
-                                </div>
-                                <div className="select-item" data-sort-value="price-high-low">
-                                    <span className="text-value-item">Price, high to low</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/* Shop control */}
+                <Control/>
                 <div className="wrapper-control-shop">
                     <div className="meta-filter-shop">
                         <div id="product-count-grid" className="count-text"></div>
                         <div id="product-count-list" className="count-text"></div>
                         <div id="applied-filters"></div>
-                        <button id="remove-all" className="remove-all-filters text-btn-uppercase" style="display: none;">REMOVE ALL <i className="icon icon-close"></i></button>
+                        <button id="remove-all" className="remove-all-filters text-btn-uppercase" style={{display:"none"}}>REMOVE ALL <i className="icon icon-close"></i></button>
                     </div>
                     <div className="tf-list-layout wrapper-shop" id="listLayout">
-                        <!-- card product list 1 -->
+                        {/* <!-- card product list 1 --> */}
                         <div className="card-product style-list" data-availability="Out of stock" data-brand="adidas">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -210,7 +75,6 @@ const ProductPage=()=>{
                                 
                             </div>
                         </div>
-                        <!-- card product list 2 -->
                         <div className="card-product style-list" data-availability="Out of stock" data-brand="LV">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -268,7 +132,6 @@ const ProductPage=()=>{
                                 
                             </div>
                         </div>
-                        <!-- card product list 3 -->
                         <div className="card-product style-list" data-availability="In stock" data-brand="nike">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -325,7 +188,6 @@ const ProductPage=()=>{
                                 
                             </div>
                         </div>
-                        <!-- card product list 4 -->
                         <div className="card-product style-list" data-availability="In stock" data-brand="gucci">   
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -379,7 +241,6 @@ const ProductPage=()=>{
                                 
                             </div>
                         </div>
-                        <!-- card product list 5 -->
                         <div className="card-product style-list" data-availability="In stock" data-brand="hermes">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -430,7 +291,6 @@ const ProductPage=()=>{
                                 </div>
                             </div>
                         </div>
-                        <!-- card product list 6 -->
                         <div className="card-product style-list" data-availability="In stock" data-brand="nike">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -477,8 +337,6 @@ const ProductPage=()=>{
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- pagination -->
                         <ul className="wg-pagination">
                             <li><a href="#" className="pagination-item text-button">1</a></li>
                             <li className="active"><div className="pagination-item text-button">2</div></li>
@@ -487,7 +345,6 @@ const ProductPage=()=>{
                         </ul>
                     </div>
                     <div className="tf-grid-layout wrapper-shop tf-col-4" id="gridLayout">
-                        <!-- card product 1 -->
                         <div className="card-product grid" data-availability="Out of stock" data-brand="adidas">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -517,7 +374,6 @@ const ProductPage=()=>{
                                 <span className="price current-price">$59.99</span>
                             </div>
                         </div>
-                        <!-- card product 2 -->
                         <div className="card-product grid" data-availability="In stock" data-brand="nike">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -630,7 +486,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 3 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -686,7 +541,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 4 -->
                         <div className="card-product grid" data-availability="Out of stock" data-brand="gucci">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -733,7 +587,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 5 -->
                         <div className="card-product grid card-product-size" data-availability="Out of stock" data-brand="hermes">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -771,7 +624,6 @@ const ProductPage=()=>{
                                 <span className="price current-price">$39.99</span>
                             </div>
                         </div>
-                        <!-- card product 6 -->
                         <div className="card-product grid" data-availability="In stock" data-brand="zalando">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -814,7 +666,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 7 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="nike">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -870,7 +721,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 8 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -926,7 +776,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 9 -->
                         <div className="card-product grid" data-availability="In stock" data-brand="hermes">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -956,7 +805,6 @@ const ProductPage=()=>{
                                 <span className="price current-price">$59.99</span>
                             </div>
                         </div>
-                        <!-- card product 10 -->
                         <div className="card-product grid"  data-availability="In stock" data-brand="gucci">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1069,7 +917,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 11 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="zalando">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1126,7 +973,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 12 -->
                         <div className="card-product grid" data-availability="In stock" data-brand="adidas">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1173,7 +1019,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 13 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="nike">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1224,7 +1069,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 14 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="LV">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1281,7 +1125,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 15 -->
                         <div className="card-product grid" data-availability="In stock" data-brand="gucci">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1324,7 +1167,6 @@ const ProductPage=()=>{
                                 </ul>
                             </div>
                         </div>
-                        <!-- card product 16 -->
                         <div className="card-product grid card-product-size" data-availability="In stock" data-brand="adidas">
                             <div className="card-product-wrapper">
                                 <a href="product-detail.html" className="product-img">
@@ -1365,7 +1207,6 @@ const ProductPage=()=>{
                                 
                             </div>
                         </div>
-                        <!-- pagination -->
                         <ul className="wg-pagination justify-content-center">
                             <li><a href="#" className="pagination-item text-button">1</a></li>
                             <li className="active"><div className="pagination-item text-button">2</div></li>
@@ -1377,7 +1218,6 @@ const ProductPage=()=>{
             </div>
         </section>
         </>
-        <!-- /Section product -->
     )
 }
 export default ProductPage;
