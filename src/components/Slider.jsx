@@ -9,7 +9,7 @@ import slider2 from '../assets/images/slider-women2.jpg';
 
 const Slider=()=>{
     return (
-     <section className="tf-slideshow slider-default slider-effect-fade">
+     <section className="relative overflow-hidden slider-effect-fade">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -31,15 +31,15 @@ const Slider=()=>{
         className="swiper tf-sw-slideshow"
       >
         <SwiperSlide>
-          <div className="wrap-slider">
+          <div className="relative">
             <img src={slider1} alt="fashion-slideshow" />
-            <div className="box-content">
-              <div className="content-slider">
-                <div className="box-title-slider">
-                  <p className="fade-item fade-item-1 subheading text-btn-uppercase text-white">
+            <div className="w-full h-full object-cover">
+              <div className="grid gap-5 absolute left-[80px] right-[80px] bottom-[80px]">
+                <div className="grid gap-4">
+                  <p className="animate-fade-in text-sm font-medium uppercase tracking-wide text-white mb-3">
                     BIKINIS & SWIMSUITS
                   </p>
-                  <div className="fade-item fade-item-2 heading text-white title-display">
+                  <div className="animate-fade-in delay-200 text-white text-4xl md:text-5xl font-bold leading-tight">
                     Flash Sale Madness
                   </div>
                 </div>
@@ -55,15 +55,16 @@ const Slider=()=>{
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="wrap-slider">
+          <div className="relative">
             <img src={slider2} alt="fashion-slideshow" />
-            <div className="box-content">
-              <div className="content-slider">
-                <div className="box-title-slider">
-                  <p className="fade-item fade-item-1 subheading text-btn-uppercase text-white">
+            <div className="w-full h-full object-cover">
+              <div className="grid gap-5 absolute left-[80px] right-[80px] bottom-[80px]">
+                <div className="grid gap-4">
+                  <p className="transition-all duration-300 ease-in-out delay-[500ms] text-white   font-semibold uppercase leading-7">
                     BIKINIS & SWIMSUITS
                   </p>
-                  <div className="fade-item fade-item-2 heading text-white title-display">
+                  
+                  <div className="animate-fade-in delay-200 text-white  text-[80px] md:text-5xl font-bold leading-[88px]">
                     Find Your <br /> Signature Style
                   </div>
                 </div>
@@ -80,9 +81,9 @@ const Slider=()=>{
       </Swiper>
 
       {/* Pagination container */}
-      <div className="wrap-pagination">
+      <div className="absolute z-10 bottom-[15px] left-0 right-0">
         <div className="container">
-          <div className="sw-dots sw-pagination-slider type-circle white-circle justify-content-center"></div>
+          <div className="sw-dots sw-pagination-slider type-circle white-circle justify-content-center items-center"></div>
         </div>
       </div>
     </section>

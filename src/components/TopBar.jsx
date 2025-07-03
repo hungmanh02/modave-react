@@ -5,34 +5,34 @@ const TopBar = () => {
     return (
         <div className="tf-topbar bg-main">
             <div className="container">
-                <div className="tf-topbar_wrap d-flex align-items-center justify-content-center justify-content-xl-between">
+                <div className="flex items-content-center justify-content-center xl:justify-between">
                     <ul className="topbar-left">
                         <li>
-                            <a className="text-caption-1 text-white" href="tel:315-666-6688">
+                            <a className="text-[14px] leading-[22px] text-white" href="tel:315-666-6688">
                                 315-666-6688
                             </a>
                         </li>
                         <li>
-                            <a className="text-caption-1 text-white" href="mailto:themesflat@gmail.com">
+                            <a className="text-[14px] leading-[22px] text-white" href="mailto:themesflat@gmail.com">
                                 themesflat@gmail.com
                             </a>
                         </li>
                         <li>
-                            <a className="text-caption-1 text-white text-decoration-underline" href="/store-list">
+                            <a className="text-[14px] leading-[22px] text-white underline" href="/store-list">
                                 Our Store
                             </a>
                         </li>
                     </ul>
-                    <div className="topbar-right d-none d-xl-block">
-                        <div className="tf-cur justify-content-end">
+                    <div className="hidden xl:block">
+                        <div className="flex gap-5 justify-content-end">
                             <div className="tf-currencies">
-                                <select className="image-select center style-default type-currencies color-white">
+                                <select className="bg-transparent py-2 px-4 border border-white/50 rounded flex items-center justify-center appearance-none type-currencies text-white">
                                     <option value="USD" data-thumbnail={countryUs}>USD</option>
                                     <option value="VND" data-thumbnail={countryVn}>VND</option>
                                 </select>
                             </div>
                             <div className="tf-languages">
-                                <select className="image-select center style-default type-languages color-white">
+                                <select className="bg-transparent py-2 px-4 border border-white/50 rounded flex items-center justify-center appearance-none type-languages text-white">
                                     <option value="en">English</option>
                                     <option value="vi">Vietnam</option>
                                 </select>
