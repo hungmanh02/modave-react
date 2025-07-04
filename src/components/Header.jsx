@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header=()=>{
     return (
         <header id="header" className="min-h-[89px]">
-            <div className="container mx-auto">
+            <div className="container max-w-[calc(100%-120px)] mx-auto">
                 <div className="-mx-4 leading-[89px] flex items-center justify-between justify-content-center">
                     <div className="md:w-1/3 w-1/4 xl:hidden">
                         <a href="#mobileMenu" className="mobile-menu" data-bs-toggle="offcanvas" aria-controls="mobileMenu">

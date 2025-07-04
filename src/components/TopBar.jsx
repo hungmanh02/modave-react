@@ -3,8 +3,8 @@ import countryUs from '../assets/images/country/us.svg'
 import countryVn from '../assets/images/country/vn.svg'
 const TopBar = () => {
     return (
-        <div className="tf-topbar bg-main">
-            <div className="container">
+        <div className="tf-topbar bg-main ">
+            <div className="container max-w-[calc(100%-120px)] mx-auto">
                 <div className="flex items-content-center justify-content-center xl:justify-between">
                     <ul className="topbar-left">
                         <li>

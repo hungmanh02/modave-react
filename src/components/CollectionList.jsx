@@ -27,9 +27,9 @@ const collectionData = [
 
 const CollectionSlider = () => {
   return (
-    <section className="py-[30px] pb-0">
-      <div className="container">
-        <div className=" mb-[44px] flex justify-between align-items-start">
+    <section className="py-[30px] pb-0 max-w-[calc(100%-120px)] mx-auto">
+      <div className="container ">
+        <div className="mb-[44px] flex justify-between align-items-start">
           <h3>Categories you might like</h3>
           <a href="shop-collection.html" className="text-[16px] leading-7 pb-1 font-semibold">
             View All Collection
