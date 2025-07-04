@@ -83,7 +83,7 @@ const Slider=()=>{
       {/* Pagination container */}
       <div className="absolute z-10 bottom-[15px] left-0 right-0">
         <div className="container">
-          <div className="sw-dots sw-pagination-slider type-circle white-circle justify-content-center items-center"></div>
+          <div className="sw-dots sw-pagination-slider type-circle white-circle flex justify-content-center items-center"></div>
         </div>
       </div>
     </section>

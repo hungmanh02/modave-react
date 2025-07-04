@@ -27,16 +27,16 @@ const collectionData = [
 
 const CollectionSlider = () => {
   return (
-    <section className="flat-spacing-2 pb_0">
+    <section className="py-[30px] pb-0">
       <div className="container">
-        <div className="heading-section-2 wow fadeInUp">
+        <div className=" mb-[44px] flex justify-between align-items-start">
           <h3>Categories you might like</h3>
-          <a href="shop-collection.html" className="btn-line">
+          <a href="shop-collection.html" className="text-[16px] leading-7 pb-1 font-semibold">
             View All Collection
           </a>
         </div>
 
-        <div className="flat-collection-circle wow fadeInUp" data-wow-delay="0.1s">
+        <div className="relative wow fadeInUp" data-wow-delay="0.1s">
           <Swiper
             modules={[Autoplay,Pagination, Navigation]}
             slidesPerView={2}
@@ -70,18 +70,19 @@ const CollectionSlider = () => {
           >
             {collectionData.map((item, index) => (
               <SwiperSlide key={index}>
+                
                 <div className="collection-circle hover-img">
-                  <a href="shop-collection.html" className="img-style">
+                  <a href="shop-collection.html" className="block w-full h-full rounded-full overflow-hidden object-cover">
                     <img className="lazyload" src={item.img} alt={item.title} />
                   </a>
-                  <div className="collection-content text-center">
+                  <div className="mt-4 grid gap-1 text-center">
                     <div>
-                      <a href="shop-collection.html" className="cls-title">
-                        <h6 className="text">{item.title}</h6>
-                        <i className="icon icon-arrowUpRight"></i>
+                      <a href="shop-collection.html" className="text-center inline-flex items-center justify-center gap-[2px]">
+                        <h6 className="inline-block">{item.title}</h6>
+                        <i className="text-xl icon-arrowUpRight"></i>
                       </a>
                     </div>
-                    <div className="count text-secondary">{item.count}</div>
+                    <div className="inline-block mr-[2px] text-secondary">{item.count}</div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -89,12 +90,12 @@ const CollectionSlider = () => {
           </Swiper>
 
           {/* Pagination + Navigation */}
-          <div className="d-flex d-lg-none sw-pagination-collection sw-dots type-circle justify-content-center"></div>
-          <div className="nav-prev-collection d-none d-lg-flex nav-sw style-line nav-sw-left">
-            <i className="icon icon-arrLeft"></i>
+          <div className="flex lg:hidden sw-pagination-collection sw-dots type-circle justify-content-center mx-auto my-0"></div>
+          <div className="nav-prev-collection hidden lg:flex nav-sw style-line left-0 absolute top-[36%] z-20">
+            <i className="text-xl icon-arrLeft"></i>
           </div>
-          <div className="nav-next-collection d-none d-lg-flex nav-sw style-line nav-sw-right">
-            <i className="icon icon-arrRight"></i>
+          <div className="nav-next-collection hidden lg:flex nav-sw style-line right-0 absolute top-[36%] z-20">
+            <i className="text-xl icon-arrRight"></i>
           </div>
         </div>
       </div>
