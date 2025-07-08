@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer=()=>{
     return (
-        <footer id="footer" className="footer">
+        <footer id="footer">
             <div className="footer-wrap">
                 <div className="py-10">
-                    <div className="container max-w-[calc(100%-120px)] mx-auto">
+                    <div className="container mx-auto">
                         <div className="flex flex-wrap ">
                             <div className="lg:w-1/3">
                                 <div className="mb-7 flex flex-col gap-5">
